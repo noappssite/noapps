@@ -27,7 +27,7 @@
             font-size: 24px;
         }
 
-        .app-button {
+        .app-button, .red-button, .additional-button {
             background-color: #ff6b6b;
             color: #fff;
             font-size: 18px;
@@ -46,20 +46,6 @@
             padding: 40px 0;
         }
 
-        .red-button {
-            background-color: #ff5252;
-            color: #fff;
-            font-size: 18px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 30px;
-            margin: 20px;
-            cursor: pointer;
-            text-decoration: none;
-            position: relative;
-            animation: glow 1s ease-in-out infinite alternate;
-        }
-
         .section-heading {
             font-size: 28px;
             margin: 0 0 20px;
@@ -69,18 +55,45 @@
             font-size: 36px;
             margin: 20px 0;
         }
+
+        /* Media query for screens with a width of 768px or less (typical mobile screens) */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .app-button, .red-button, .additional-button {
+                font-size: 16px;
+                padding: 12px 24px;
+                margin: 10px;
+            }
+
+            .section-heading {
+                font-size: 24px;
+                margin: 0 0 10px;
+            }
+
+            .thank-you {
+                font-size: 28px;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to <strong>NOAPPS</strong></h1>
+        <h1>Welcome to <strong>NoApps</strong></h1>
         <p>Your Partner in App Development</p>
         <a href="#features" class="app-button">Explore Our Apps</a>
     </div>
 
     <section id="features">
-        <h2>Why Choose <strong>NOAPPS</strong>?</h2>
-        <p>At <strong>NOAPPS</strong>, we specialize in creating innovative and user-friendly mobile applications. Our dedicated team of developers is committed to delivering high-quality apps that meet your needs.</p>
+        <h2>Why Choose <strong>NoApps</strong>?</h2>
+        <p>At <strong>NoApps</strong>, we specialize in creating innovative and user-friendly mobile applications. Our dedicated team of developers is committed to delivering high-quality apps that meet your needs.</p>
         <p>Discover our exciting features:</p>
         <p>✓ Intuitive User Interfaces</p>
         <p>✓ Powerful Functionality</p>
@@ -89,11 +102,13 @@
 
     <div class="green-section">
         <h3 class="section-heading">Download Our Apps</h3>
-        <a href="#" class="red-button">Button 1</a>
-        <a href="#" class="red-button">Button 2</a>
-        <a href="#" class="red-button">Button 3</a>
+        <a href="#" class="red-button">Productivity</a>
+        <a href="#" class="red-button">Games</a>
+        <a href="#" class="red-button">AI</a>
+        <a href="#" class="red-button">Comming Soon...</a> <!-- Updated additional button style -->
     </div>
 
     <h2 class="thank-you">Thank You</h2>
 </body>
 </html>
+
