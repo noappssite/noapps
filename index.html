@@ -48,7 +48,7 @@
 
         .section-heading {
             font-size: 28px;
-            margin: 0 0 20px.
+            margin: 0 0 20px;
         }
 
         .thank-you {
@@ -74,7 +74,7 @@
 
             .section-heading {
                 font-size: 24px;
-                margin: 0 0 10px.
+                margin: 0 0 10px;
             }
 
             .thank-you {
@@ -104,12 +104,19 @@
     <div class="green-section">
         <h3 class="section-heading">Download Our Apps</h3>
         <p>Click below what you want to download!</p>
-        <a href="#" class="red-button">Productivity</a><br><br><br><br>
-        <a href="#" class="red-button">Games</a><br><br><br><br>
-        <a href="#" class="red-button">AI</a><br><br><br><br>
-        <a href="#" class="red-button">Coming Soon...</a><br>
+        <a href="#" class="red-button" onclick="showErrorMessage()">Productivity</a><br><br><br><br>
+        <a href="#" class="red-button" onclick="showErrorMessage()">Games</a><br><br><br><br>
+        <a href="#" class="red-button" onclick="showErrorMessage()">AI</a><br><br><br><br>
+        <a href="#" class="red-button" onclick="showErrorMessage()">Coming Soon...</a><br>
     </div>
 
-    <h2 class="thank-you">Thank You</h2>
+    <h2 class="thank-you" id="error-message" style="display: none">This Website is Still Under Development</h2>
+
+    <script>
+        function showErrorMessage() {
+            // Show the error message when any button is clicked
+            document.getElementById('error-message').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
