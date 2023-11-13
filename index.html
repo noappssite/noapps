@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>NoApps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +29,9 @@
             font-size: 24px;
         }
 
-        .app-button, .red-button, .additional-button {
+        .app-button,
+        .red-button,
+        .additional-button {
             background-color: #ff6b6b;
             color: #fff;
             font-size: 18px;
@@ -57,6 +60,28 @@
             margin: 20px 0;
         }
 
+        .motd-container {
+            font-size: 1px;
+            height: 25vh;
+            overflow: hidden;
+        }
+
+        .motd {
+            background-color: #ffcc80;
+            padding: 5px;
+            font-size: 1px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .motd p {
+            margin: 3px 0;
+        }
+
         /* Media query for screens with a width of 768px or less (typical mobile screens) */
         @media (max-width: 768px) {
             h1 {
@@ -67,7 +92,9 @@
                 font-size: 18px;
             }
 
-            .app-button, .red-button, .additional-button {
+            .app-button,
+            .red-button,
+            .additional-button {
                 font-size: 16px;
                 padding: 12px 24px;
                 margin: 10px;
@@ -82,15 +109,22 @@
                 font-size: 28px;
                 margin: 10px 0;
             }
+
+            .motd-container {
+                font-size: 1px;
+            }
+
+            .motd p {
+                margin: 2px 0;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1>Welcome to <strong>NoApps</strong></h1>
         <p>Your Partner in App Development</p>
-        <p>Click any type of app you want to download below:</p>
-        <a href="#features" class="app-button">Explore Our Apps</a>
     </div>
 
     <section id="features">
@@ -104,11 +138,16 @@
 
     <div class="green-section">
         <h3 class="section-heading">Download Our Apps</h3>
-        <p>Click below what you want to download!</p>
         <a href="productivity.html" class="red-button" onclick="showErrorMessage('This Website is Still Under Development')">Productivity</a><br><br><br><br>
         <a href="games.html" class="red-button" onclick="showErrorMessage('This Website is Still Under Development')">Games</a><br><br><br><br>
         <a href="artificialintelligence.html" class="red-button" onclick="showErrorMessage('This Website is Still Under Development')">AI</a><br><br><br><br>
         <a href="accesories.html" class="red-button" onclick="showErrorMessage('This Website is Still Under Development')">Utility/ Accesories' Apps</a><br>
+    </div>
+
+    <div class="motd-container">
+        <div class="motd">
+            <p>This Site Running in Beta Version</p>
+        </div>
     </div>
 
     <h2 class="thank-you">Thank You</h2>
@@ -119,4 +158,5 @@
         }
     </script>
 </body>
+
 </html>
